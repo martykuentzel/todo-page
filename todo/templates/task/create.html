@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<div class="card text-center">
+    <div class="card-body">
+     <hi>Add a new Task</hi>
+    </div>
+    <form method="POST">
+        {% crispy form form.helper %}
+   </form>
+
+</div>
+{% endblock %}
